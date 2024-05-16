@@ -8,7 +8,6 @@ import temaAzul from "../Colores";
 import {ThemeProvider} from '@mui/material/styles';
 import { Link } from "react-router-dom";
 const Home = () => {
-    console.log("Inicio");
     return (
         <ThemeProvider theme={temaAzul}>
             <Box id="hero" component="main" 
@@ -18,7 +17,7 @@ const Home = () => {
                     position:'relative', 
                     display: 'flex', 
                     justifyContent: 'center'}}>
-                <Link to='/product' style={{ textDecoration: 'none'}}>
+                <Link to='/products' style={{ textDecoration: 'none'}}>
                     <Button 
                         size='medium' 
                         variant='contained'
